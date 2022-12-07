@@ -1,0 +1,27 @@
+* {
+  box-sizing: border-box;
+}
+
+.parent {
+  background-color: blue;
+  color: white;
+}
+
+.child,
+.other {
+  height: 50px;
+  color: black;
+  line-height: 50px;
+  text-indent: 20px;
+}
+
+.child {
+  background-color: cornflowerblue;
+  color: white;
+  width: 500px;
+}
+
+.other {
+  width: 100px;
+  background-color: orange;
+}
