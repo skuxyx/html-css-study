@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="block.css" />
+  </head>
+  <body>
+    <!-- 
+      block의 경우 
+      1. width 값을 지정하지 않을 경우 부모의 width 만큼 공간을 차지.
+      2. width 값을 지정했을 경우 남는 공간을 다른 요소가 차지하지 못하도록 margin.
+      3. heigth 값을 지정하지 않을 경우 자식(들)이 가진 height 의 합을 가진다.
+      4. width, height, padding, margin 전부 다 사용이 가능하다.
+    -->
+    <div class="parent">
+      <!-- 자식1 옆에 공간이 남아도 margin 을 두어 자식 2가 옆으로 올라오지 못함. -->
+      <div class="child">자식1</div>
+      <div class="other">자식2</div>
+    </div>
+  </body>
+</html>
