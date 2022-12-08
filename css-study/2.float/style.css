@@ -1,0 +1,58 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  height: 100vh;
+  background-color: black;
+  font-family: 'Roboto', sans-serif;
+  letter-spacing: -0.02em;
+}
+
+a {
+  font-size: 18px;
+  line-height: 20px;
+  color: #8492a6;
+  text-decoration: none;
+}
+
+a:hover {
+  color: blue;
+  border-bottom: 2px solid blue;
+}
+
+ul {
+  list-style-type: none;
+  padding-left: 0px;
+}
+
+.tab-menu {
+  max-width: 540px;
+  background-color: white;
+  border-bottom: 1px solid blue;
+}
+
+.tab-menu::after {
+  content: '';
+  /* clear를 사용하려면 반드시 display : block 으로 두어야 함. */
+  display: block;
+  clear: left;
+}
+
+.tab-menu-item {
+  float: left;
+  margin-right: 16px;
+  /* 
+    해당 위치에서 padding: 16px 20px; 주어도 상관 없지만
+    39번 영역에서 지정할 경우 padding 영역까지 링크가 걸려서 사용성 ↑
+  */
+}
+
+.tab-menu-item a {
+  /* a 태그는 display : inline 으로 기본 설정되어 있어서,
+     padding, margin ( top, bottom ) 적용이 안되므로 display를 block 으로 수정.
+  */
+  display: block;
+  padding: 16px 20px;
+}
