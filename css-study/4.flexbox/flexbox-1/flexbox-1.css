@@ -1,0 +1,56 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  letter-spacing: -0.02em;
+}
+
+a {
+  font-size: 18px;
+  line-height: 20px;
+  color: #8492a6;
+  text-decoration: none;
+}
+
+.tab-menu {
+  /* 부모 요소에게 flex */
+  display: flex;
+  /* 가로 배치. */
+  flex-direction: row;
+  /* 한 줄에 유지. */
+  flex-wrap: nowrap;
+  /* 왼쪽 정렬 */
+  justify-content: flex-start;
+  /* 가운데 정렬 */
+  align-items: center;
+  padding-left: 0;
+  border-bottom: 1px solid #e5eaef;
+  list-style-type: none;
+}
+
+.tab-menu-item {
+  margin-right: 16px;
+}
+
+.tab-menu-item.active {
+  border-bottom: 2px solid #2860e1;
+}
+
+.tab-menu-item.active a {
+  font-weight: 500;
+  color: #2860e1;
+}
+
+.tab-menu-item:last-child {
+  margin-right: 0;
+}
+
+.tab-menu-item a {
+  display: block;
+  padding: 16px 20px;
+}
+
+/* ▼ WHERE YOUR CODE BEGINS */
