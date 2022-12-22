@@ -1,0 +1,38 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.pratice {
+  background-color: red;
+  width: 300px;
+  height: 300px;
+  /* animation-name : keyframes에 적어준 name */
+  animation-name: pratice-test;
+  /* 지속시간 */
+  animation-duration: 3000ms;
+  /* 변화속도 */
+  animation-timing-function: ease-in-out;
+  /* ~초 뒤 애니메이션 작동 */
+  animation-delay: 1000ms;
+  /* 몇 번 반복할 것인지 => 숫자 or infinite(무한반복) */
+  animation-iteration-count: 3;
+  /* 진행방향 ( reverse : to => from , alternate ) */
+  animation-direction: alternate;
+}
+
+/* keyframes name [ name 은 아무 이름이나 사용해도 상관 없음 ] */
+@keyframes pratice-test {
+  from {
+    background-color: red;
+  }
+  to {
+    background-color: blue;
+  }
+}
