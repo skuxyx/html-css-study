@@ -1,0 +1,25 @@
+<!-- 
+    CSS transition => 속성을 부드럽게 변화시키고자 할 때 사용.
+
+    * 4가지 속성이 존재, timing-functino & delay 는 생략해도 상관 없음.
+    transition : property[속성] | duration[지속시간, ms 단위] | 
+                 timing-function[변화속도] : ease-in | ease-out | ease-in-out | cubic-bezier()
+                 delay[ ~초 후 transition / ms단위 ]
+        
+        .pratice {
+            font-size : 40px;
+            background-color : black;
+            transition : background-color 2000ms ease-in 3000ms
+
+            *개별적으로 선언할 수도 있음.
+            transition : background-color 2000ms ease-in 3000ms,
+                         font-size 3000ms ease-out 3000ms
+        }
+    
+        .pratice.act {
+            font-size : 30px;
+            background-color : red;
+        }
+        => 3초뒤 배경화면이 검정색에서 2초동안 ease-in 으로 빨강으로 바뀜.
+    }
+ -->
