@@ -1,0 +1,40 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+button {
+  border-radius: 30px;
+  margin: 20px;
+  height: 120px;
+  width: 100px;
+  text-align: center;
+}
+
+/*     
+    box-shadow : h-offset v-offset blur              spread     color
+                   [x축]   [y축] 흐린정도[px단위]  그림자사이즈   색상          
+                   
+*/
+.confirm-button {
+  color: white;
+  background-color: green;
+  transition: box-shadow 250ms ease-in;
+}
+
+/* confirm 버튼에 마우스를 올리면 */
+.confirm-button:hover {
+  box-shadow: 0 10px 16px 0 rgba(19, 206, 102, 0.35);
+}
+
+.cancel-button {
+  color: white;
+  background-color: red;
+  box-shadow: 0 10px 16px 0 rgba(255, 73, 73, 0.35);
+}
