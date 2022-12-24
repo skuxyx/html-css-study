@@ -15,6 +15,8 @@ button {
   height: 120px;
   width: 100px;
   text-align: center;
+  /* 투명도 설정 => Opacity [ 0(투명), 1(불투명) ] */
+  opacity: 0.5;
 }
 
 /*     
