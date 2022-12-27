@@ -1,0 +1,58 @@
+<!-- 
+    CSS Selector
+    
+    1. Type Selector
+    strong { color : white; }
+    p { color : black; }    
+
+    2. Class Selector => 요소 내에 class attribute 을 만들어서 사용.
+    
+    2-1) HTML 파일에서 <div class="pratice"> ~ </div> 에 CSS를 적용하고자 할 경우
+         .pratice{ color : red; } 와 같이 사용함.
+
+    2-2) Class Selector 의 경우 한 요소에 여러개의 클래스를 가질 수 있음.
+         <div class="pratice pratice2 pratice3"> ~ </div> => ratice pratice2 pratice3 3개의 클래스를 가짐.  
+
+
+    3. ID Selector => 식별자, ID는 단 한개만 존재해야 함.
+
+    3-1) HTML 파일에서 <div id="pratice"> ~ </div> 에 CSS를 적용하고자 할 경우
+         #pratice{ color : red; } 와 같이 사용함.
+         
+    4. 자식, 자손, 형제 선택자.
+
+    자식선택자 : parent > child
+    자손선택자 : parent descendants
+    형제선택자 : parent + sibling 
+                parent ~ sibling 
+
+ -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- 
+     section의 자식으로는 h1, ul 태그 2개, li의 경우 section의 자식이 아닌 자손.
+     -->
+    <section>
+      <h1>CSS</h1>
+      <ul>
+        <li>
+          <!-- 
+               h1, p 태그는 li의 자식, ul의 자손. 
+               h1, p 태그는 형제.
+          -->
+          <h1>Header</h1>
+          <p>~</p>
+          <h1>Header2</h1>
+          <p>~2</p>
+        </li>
+      </ul>
+    </section>
+  </body>
+</html>
