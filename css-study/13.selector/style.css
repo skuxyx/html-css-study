@@ -1,0 +1,13 @@
+/* #pratice의 CSS가 적용된 모습을 확인할 수 있음. */
+.a.b.c {
+  background-color: darkblue;
+}
+
+#pratice {
+  background-color: red;
+}
+
+/* 요소선택자(3순위)임에도 !important 를 주면 다른 순위보다 우선 적용됨. */
+p {
+  background-color: aqua !important;
+}

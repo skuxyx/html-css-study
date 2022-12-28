@@ -1,0 +1,44 @@
+<!-- 
+
+    1. 동일한 태그에 선언할 경우 나중에 작성된 CSS가 적용됨.
+       => 따라서 아래 예시에서는 color : blue 로 적용됨.
+    
+    p {
+        color : black;
+    }
+
+    p {
+        color : blue;
+    }
+
+    2. CSS 선택자 우선순위.
+    
+    1 순위: ID 선택자.
+    2 순위: 클래스 선택자, 가상클래스(~:first-child , ~:nth-child, ~:last-child)
+    3 순위: 요소 선택자 [ div, p, span ..., html tag ]
+    
+    ------------------------------------------------------------------------------
+
+    2-2) CSS 선택자 우선순위가 적용되지 않는 상황.
+
+    1. inline style => HTML 태그 안에 CSS를 작성할 때.
+       <p style = "font-size : 15px;">
+
+    2. !important; => 1번(inline style)보다 우선함.
+    p {
+        color : blue !important;
+    }
+ -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <p id="pratice" class="a b c">CSS pratice</p>
+  </body>
+</html>
